@@ -1,0 +1,32 @@
+.map {
+    margin-left: 37%;
+    height: 70%;
+    width: 50%;
+    position: relative;
+    z-index: 0;
+    #marker {
+        position: absolute;
+        top: 63.33%;
+        right: 44.11%;
+
+        border-radius: 50% 50% 50% 0;
+        border: 4px solid #000;
+        width: 20px;
+        height: 20px;
+        transform: rotate(-45deg);
+        z-index: 1;
+    }
+
+    #marker:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        margin-left: -5px;
+        margin-top: -5px;
+        background-color: #000      ;
+    }
+  }
+

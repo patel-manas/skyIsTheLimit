@@ -1,0 +1,92 @@
+<!-- <div class="contact-container">
+  <div class="title">Contact</div>
+  <div class="contact-wrapper">
+    <div class="loc-map">
+      <sky-leaf-map></sky-leaf-map>
+    </div>
+    <div class="contact"></div>
+    <div class="info"></div>
+  </div>
+</div> -->
+
+<div class="contact-container-2">
+  <div class="map-map">
+    <sky-leaf-map></sky-leaf-map>
+  </div>
+  <div class="info-form">
+    <div class="info-header">
+      <span>Contact Me</span>
+    </div>
+    <div class="details">
+      <span class="name"> Manas Patel</span>
+      <span class="address"
+        ><i class="fa fa-map-marker" aria-hidden="true"></i>Chennai, India</span
+      >
+      <div class="social">
+        <span><i class="fa fa-github" aria-hidden="true"></i></span>&nbsp;
+        <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>&nbsp;
+        <span><i class="fa fa-anchor" aria-hidden="true"></i></span>
+      </div>
+    </div>
+    <form
+      #contactForm="ngForm"
+      (submit)="onSubmitContactForm(contactForm.value)"
+    >
+      <input
+        type="text"
+        name="name"
+        ngModel
+        placeholder="Enter Name"
+        required
+      />
+
+      <input
+        type="email"
+        name="email"
+        ngModel
+        placeholder="Enter Email"
+        required
+      />
+
+      <textarea type="text-area" name="message" ngModel required>
+      Enter Message
+      </textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!--embedded gmap-->
+<!--
+     <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          width="600"
+          height="500"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=sholingnallur%2C%20chennai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe
+        ><a href="https://www.enable-javascript.net">znajdziesz tutaj</a>
+      </div>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          height: 100%;
+          width: 100%;
+        }
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 100%;
+          width: 100%;
+        }
+      </style>
+    </div>
+    -->
+<!-- end -->

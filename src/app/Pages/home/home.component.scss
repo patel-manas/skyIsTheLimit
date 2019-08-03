@@ -1,0 +1,35 @@
+
+.home-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background: url('../../../assets/images/sky-hand.jpg');
+  color: wheat;
+  display: grid;
+  grid-template: 1fr repeat(3, 3fr) / 1fr 3fr;
+  grid-template-areas:
+    "logo nav"
+    "intro non1"
+    "intro none2"
+    "none3 quote";
+
+    .intro {
+        grid-area: intro;
+    }
+    .nav {
+        grid-area: nav;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;  
+    }
+    .none1 {
+        grid-area: none1;
+    }
+    .none2 {
+        grid-area: none2;
+    }
+    .none3 {
+        grid-area: none3;
+    }
+}

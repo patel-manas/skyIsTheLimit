@@ -1,0 +1,126 @@
+.contact-container {
+  // background-color: #333745;
+  background-color: #67EFCF;
+
+  .title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    color: wheat;
+    padding-top: 1rem;
+  }
+
+  .contact-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 95vh;
+    overflow-x: hidden;
+    display: grid;
+    grid-template: 1fr 3fr / 1fr 1fr;
+    grid-template-areas:
+      "map info"
+      "map form";
+    // padding: 100px;
+    padding: 50px 50px 30px 50px;
+
+    .loc-map {
+      grid-area: map;
+      position: relative;
+    }
+
+    .contact {
+      grid-area: form;
+    }
+
+    .info {
+      grid-area: info;
+    }
+  }
+}
+
+.contact-container-2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+
+  .map-map {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .info-form {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 200;
+    z-index: 10 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #2C494D;
+    // background-color: darkslateblue;
+    // border: 1px solid #ccc;
+    color: wheat;
+
+    .info-header {
+      text-align: center;
+      width: 100%;
+      margin: 10px;
+      margin-right: 0;
+      margin-bottom: 50px;
+
+      span {
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+
+      .name {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .address,
+      .social {
+        margin: 0px 5px 5px 5px;
+        margin-right: 0;
+      }
+    }
+
+    form {
+      width: 90%;
+      height: 70%;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      input,
+      textarea,
+      button {
+        margin: 5px 5px;
+        outline: none;
+        background-color: transparent;
+        border: 0.5px solid #ccc;
+        height: 20px;
+      }
+
+      input::placeholder,
+      textarea::placeholder,
+      button::placeholder {
+        color: wheat;
+      }
+    }
+  }
+}

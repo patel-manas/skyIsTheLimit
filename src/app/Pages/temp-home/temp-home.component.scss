@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:300,400,700);
+
+img {
+    object-fit: fill;
+}
+.home-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url('../../../assets/images/sky-hand.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: wheat;
+    display: grid;
+    grid-template: 1fr repeat(3, 3fr) / 1fr 3fr;
+    grid-template-areas: 
+        "logo nav"
+        "intro non1"
+        "intro none2"
+        "none3 quote";
+}
+.logo , .nav {
+    padding-top: 5px;
+}
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1rem; 
+}
+
+.logo span {
+    padding: 15px;
+    color: wheat;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    border: 1px solid wheat;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+}
+.intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    padding-left: 1rem;
+}
+
+.intro .title {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.quote {
+    grid-area: quote;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;  
+}
+.none1 {
+    grid-area: none1;
+}
+.none2 {
+    grid-area: none2;
+}
+.none3 {
+    grid-area: none3;
+}
