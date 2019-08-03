@@ -3,6 +3,7 @@
 img {
     object-fit: fill;
 }
+
 .home-wrapper {
     width: 100%;
     height: 100vh;
@@ -11,37 +12,11 @@ img {
     background-size: 100% 100%;
     color: wheat;
     display: grid;
-    grid-template: 1fr repeat(3, 3fr) / 1fr 3fr;
+    grid-template: repeat(3, 3fr) / 1fr 3fr;
     grid-template-areas: 
-        "logo nav"
         "intro non1"
         "intro none2"
         "none3 quote";
-}
-.logo , .nav {
-    padding-top: 5px;
-}
-.logo {
-    grid-area: logo;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 1rem; 
-}
-
-.logo span {
-    padding: 15px;
-    color: wheat;
-    font-weight: bold;
-    letter-spacing: 1rem;
-    border: 1px solid wheat;
-}
-
-.nav {
-    grid-area: nav;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;  
 }
 .intro {
     grid-area: intro;

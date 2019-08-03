@@ -18,6 +18,7 @@ import { LeafMapComponent } from './Components/leaf-map/leaf-map.component';
 import { SkillsChartComponent } from './Components/skills-chart/skills-chart.component';
 import { DonutDrillComponent } from './Components/donut-drill/donut-drill.component';
 import { MapBoxComponent } from './Components/map-box/map-box.component';
+import { NavWrapperComponent } from './Pages/nav-wrapper/nav-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { MapBoxComponent } from './Components/map-box/map-box.component';
     LeafMapComponent,
     SkillsChartComponent,
     DonutDrillComponent,
-    MapBoxComponent
+    MapBoxComponent,
+    NavWrapperComponent
   ],
   imports: [
     BrowserModule,

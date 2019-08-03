@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'skyIsTheLimit';
+
+  navActions(event) {
+    console.log('catched secion', event);
+
+    const section = document.getElementById(event.trim());
+
+
+    console.log('catched elem', section);
+    section.scrollIntoView({behavior: 'smooth'});
+  }
 }
